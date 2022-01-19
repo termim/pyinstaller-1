@@ -11,7 +11,7 @@ if [[ ! $- =~ .*i.* ]] ; then
 fi
 
 # Check for required vars
-if [ -n "$CI" ]; then
+if [ -n "$CIx" ]; then
     DOCKER_REGISTRY_PASS="${DOCKER_REGISTRY_PASS:?"DOCKER_REGISTRY_PASS not set"}"
     DOCKER_REGISTRY_URL="${DOCKER_REGISTRY_URL:?"DOCKER_REGISTRY_URL not set"}"
     DOCKER_REGISTRY_USER="${DOCKER_REGISTRY_USER:?"DOCKER_REGISTRY_USER not set"}"
